@@ -2,20 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Testmaui60.NewPage1"
+             xmlns:resources="clr-namespace:Testmaui60"
              Title="NewPage1">
-    <VerticalStackLayout>
+    <VerticalStackLayout BackgroundColor="{x:Static Member=resources:SharedResources.Color1}">
         <Label 
             Text="Count: 0"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             x:Name="counterLbl"
             FontSize="22"
+            TextColor="{x:Static Member=resources:SharedResources.Color2}"
             FontAttributes="Bold"/>
         <Button
             Text="Click To Count"
             Clicked="Button_Clicked"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
+            BackgroundColor="{x:Static Member=resources:SharedResources.Color3}"
         />
     </VerticalStackLayout>
 </ContentPage>
