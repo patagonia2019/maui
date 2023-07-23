@@ -5,26 +5,35 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Testmaui60"
     Shell.FlyoutBehavior="Flyout">
+    <TabBar>
+        <Tab Title="Main" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="MainPage"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
 
-    <ShellContent
-        Title="MainPage"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Icon="dotnet_bot.png"
-        Route="MainPage" />
+        <Tab Title="Layout" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="LayoutExample"
+                ContentTemplate="{DataTemplate local:LayoutExample}"
+                Route="LayoutExample" />
+        </Tab>
 
-    <ShellContent
-        Title="LayoutExample"
-        ContentTemplate="{DataTemplate local:LayoutExample}"
-        Route="LayoutExample" />
+        <Tab Title="New" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="NewPage1"
+                ContentTemplate="{DataTemplate local:NewPage1}"
+                Route="NewPage1" />
+        </Tab>
 
-    <ShellContent
-        Title="NewPage1"
-        ContentTemplate="{DataTemplate local:NewPage1}"
-        Route="NewPage1" />
+        <Tab Title="Test" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="TestPage"
+                ContentTemplate="{DataTemplate local:TestPage}"
+                Route="TestPage" />
+        </Tab>
+    </TabBar>
 
-    <ShellContent
-        Title="TestPage"
-        ContentTemplate="{DataTemplate local:TestPage}"
-        Route="TestPage" />
 </Shell>
 
